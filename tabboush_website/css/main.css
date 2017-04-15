@@ -21,9 +21,20 @@
 }
 
 
+.menuItem
+{
+	list-style-type: none ;
+	float: right;
+	margin: 10px 30px;
 
+}
 
+.menuItem a 
+{
+	color: rgb(94, 94, 94);
+	text-decoration: none;
 
+}
 
 
 
