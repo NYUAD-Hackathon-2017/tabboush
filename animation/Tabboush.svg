@@ -1,4 +1,8 @@
-<svg width="172" height="172" viewBox="0 0 172 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<<<<<<< HEAD
+<svg id ="tabboushShape" width="172" height="172" viewBox="0 0 172 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+=======
+<svg width="172" height="200" viewBox="0 0 172 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+>>>>>>> dfd1964db61e4eb51d62945411f68932f336a97c
 <title>Tabboush</title>
 <desc>Created using Figma</desc>
 <g id="Canvas" transform="translate(463 400)" figma:type="canvas">
