@@ -18,6 +18,7 @@
                 padding-bottom: 20px;
             }
         </style>
+        <link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -59,7 +60,7 @@
         </div>
         <div class="col-md-8 top-title">
           <h1>Daily Schedule</h1>
-          <p>Create your child's<strong>daily</strong> schedule with all the tasks that he should perform.</p>
+          <p>Create your child's <strong>daily schedule</strong> with all the tasks that they should perform</p>
         </div>
       </div>
     </div>
@@ -72,12 +73,13 @@
           <h2>Tasks Calendar</h2>
           <p>This calendar displays the timed tasks of the child on a daily/weekly basis</p>
 
-         <div id="wrapper">
-			<div id="myScheduler"></div>
-			</div>
+          <div id="wrapper">
+            <div id="myScheduler"></div>
+    			</div>
         </div>
       </div>
 
+      <hr />
  
       <footer>
         <p>&copy; Tabboush 2017</p>
@@ -95,38 +97,43 @@
 
         <script src="js/main.js"></script>
 
-            <script src="js/main.js"></script>
-		<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
-		<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+        <script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
 
         <script>
-		YUI().use(
-  'aui-scheduler',
-  function(Y) {
-    var events = [
-      {
-        content: 'Reading',
-        endDate: new Date(2017, 1, 4, 12),
-        startDate: new Date(2017, 1, 4, 10)
-      }
-    ];
+        $(document).ready(function() {
+          YUI().use(
+            'aui-scheduler',
+            function(Y) {
+              var events = [
+                {
+                  content: 'Reading',
+                  endDate: new Date(2017, 1, 4, 12),
+                  startDate: new Date(2017, 1, 4, 10)
+                }
+              ];
 
-    var eventRecorder = new Y.SchedulerEventRecorder();
-    var weekView = new Y.SchedulerWeekView();
+              var eventRecorder = new Y.SchedulerEventRecorder();
+              var weekView = new Y.SchedulerWeekView();
 
-    new Y.Scheduler(
-      {
-        boundingBox: '#myScheduler',
-        date: new Date(2017, 1, 4),
-        eventRecorder: eventRecorder,
-        items: events,
-        render: true,
-        views: [weekView]
-      }
-    );
-  }
-);
-		</script>
+              new Y.Scheduler(
+                {
+                  boundingBox: '#myScheduler',
+                  date: new Date(2017, 1, 4),
+                  eventRecorder: eventRecorder,
+                  items: events,
+                  render: true,
+                  views: [weekView]
+                }
+              );
+
+              $(".scheduler-view-scrollable").on('click', function() {
+                $(".scheduler-event-recorder-content").remove();
+                $(".popover-title").append("<select class='form-control'><option>Brush Hair</option><option>Wear Clothes</option><option>Eat Snack</option><option>Brush Teeth</option><option>Go to Bed</option></select>");
+              });
+            }
+          );
+        });
+        </script>
 
     </body>
 </html>
