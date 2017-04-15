@@ -1,0 +1,6 @@
+git status
+git add .
+git status
+git commit -m "my msg is here"
+git pull origin master
+git push origin master
