@@ -7,6 +7,7 @@
 .jumbotron {
     background-image: url("../img/jumbo-cat-img.jpg");
     background-size: cover;
+    border-bottom: 2px solid #e4e4e4;
 }
 
 .top-title {
