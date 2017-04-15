@@ -11,12 +11,12 @@
 	
 	<body>
 		
-		<div id="div1" >
+
 		
 		
 		<script>	
 		
-			var s = Snap("#div1");
+			var s = Snap();
 			Snap.load("https://raw.githubusercontent.com/NYUAD-Hackathon-2017/tabboush/master/animation/Tabboush.svg" , onSVGLoaded);
 			
 
@@ -26,52 +26,34 @@
 				s.append(data) ;
 			
 					
-		/*	var foot = data.select("#path1_fill");
+			var foot = data.select("#path1_fill");
 			var Tbody = data.select("#path0_fill");
 			var eye = data.select("#path2_fill");
-			*/
+		
+		console.log(Tbody.id) ;
 			
-			var tbsh = data.select("#tabboushShape") ;
-			/*var grp = data.select("path") ;
-			grp.add(foot);
-			grp.add(eye);
-
-				*/
-			/*	var arr = data.selectAll("path");
-				var grp ;
-				
-				for (var i=0 ; i<arr.size ; i++)
-				{
-					grp[i] = arr[i] ;
-				}
-*/
-				tbsh.animate({ d: "M 30 10.5C 30 16.299 25.299 21 19.5 21C 13.70101 21 9 16.299 9 10.5C 9 4.70101 13.70101 0 19.5 0C 25.299 0 30 4.70101 30 10.5Z"  }, 1000 ) ;
-
-	//		Tweenlite.to( data.select("#path1_fill") , 1, {xc:100})
-
-
-			//foot.animate({ d: "M 30 10.5C 30 16.299 25.299 21 19.5 21C 13.70101 21 9 16.299 9 10.5C 9 4.70101 13.70101 0 19.5 0C 25.299 0 30 4.70101 30 10.5Z"  },1000);
-
+			var grp = data.select("path") ;
+			//grp.add(foot);
+			//grp.add(eye);
 			
-			//group.attr({d: "M 30 10.5C 30 16.299 25.299 21 19.5 21C 13.70101 21 9 16.299 9 10.5C 9 4.70101 13.70101 0 19.5 0C 25.299 0 30 4.70101 30 10.5Z" });
-/*
-			var clickFunc = function () {
-				grp.animate({ transform: 'r360, 150,150' },2000, mina.bounce );
+			grp.attr()
 
-			};
+			//var clickFunc = function () {
+				//grp.animate({ transform: 'r360, 150,150' },2000, mina.bounce );
+
+			//};
+	
+		//	foot.animate({ d: "M 30 10.5C 30 16.299 25.299 21 19.5 21C 13.70101 21 9 16.299 9 10.5C 9 4.70101 13.70101 0 19.5 0C 25.299 0 30 4.70101 30 10.5Z"  },1000);
 			
-			Tbody.click(clickFunc) ;
-			*/
+
+	
 }
 		
 		</script>
 		
 		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></
-		<script src="move.js" ></script>
-
 		
-	</div>
+	
 	</body>
 
 
