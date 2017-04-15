@@ -79,7 +79,7 @@
 		
 		 <div class="col-md-4">
          
-		<button type="button" class="btn btn-success">Save Task</button>
+		<button type="button" class="btn btn-success" onclick="addTaskFunction()">Save Task</button>
         </div>
       </div>
             
@@ -88,24 +88,34 @@
     </div>
 
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-6">
-          <h2>KPI Chart 1</h2>
+     
+  <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>
+            Tasks List 
+          </h4>
+        </div>
+        <table class="table table-fixed">
+          <thead>
+            <tr>
+              <th class="col-xs-2">#</th><th class="col-xs-8">Time</th><th class="col-xs-2">Task</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-xs-2">1</td><td class="col-xs-8">8:00</td><td class="col-xs-2">Wake up</td>
+            </tr>
+            <tr>
+              <td class="col-xs-2">2</td><td class="col-xs-8">8:15</td><td class="col-xs-2">Eat</td>
+            </tr>
+
           
-
-        </div>
-
-        <div class="col-md-6">
-          <h2>KPI Chart 2</h2>
-         
-
-        </div>
+          </tbody>
+        </table>
       </div>
+  </div>
 
-      <hr>
-
-      <footer>
         <p>&copy; Tabboush 2017</p>
       </footer>
     </div> <!-- /container -->        
@@ -190,10 +200,13 @@
                 });
 				
 				$('.dropdown-menu').on( 'click', 'a', function() {
-    var text = $(this).html();
-    var htmlText = text + ' <span class="caret"></span>';
-    $(this).closest('.dropdown').find('.dropdown-toggle').html(htmlText);
-});
+				var text = $(this).html();
+				var htmlText = text + ' <span class="caret"></span>';
+				$(this).closest('.dropdown').find('.dropdown-toggle').html(htmlText);
+				});
+				function addTaskFunction() {
+				//add a new task tothe database
+				}
             </script>
 
     </body>
