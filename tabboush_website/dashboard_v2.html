@@ -59,7 +59,7 @@
         </div>
         <div class="col-md-8 top-title">
           <h1>Parental Dashboard</h1>
-          <p>Keep an eye on your child's behavior and attend more carefully to their needs.</p>
+          <p>Keep an eye on your child's <strong>behavior</strong> and attend more <strong>carefully</strong> to their needs.</p>
         </div>
       </div>
     </div>
@@ -123,17 +123,22 @@
           var kpiChartOne = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Item 1', 'Item 2', 'Item 3'],
+                labels: ['April 15', 'April 16', 'April 17', 'April 18', 'April 19'],
                 datasets: [
                     {
                         type: 'bar',
-                        label: 'Bar Component',
-                        data: [1, 2, 3, 4, 5],
+                        fill: false,
+                        backgroundColor: 'rgba(46, 61, 169, 0.2)',
+                        borderColor: window.chartColors.yellow,
+                        label: 'Tasks Proposed',
+                        data: [12, 13, 12, 10, 11],
                     },
                     {
                         type: 'line',
-                        label: 'Line Component',
-                        data: [30, 20, 10, 5, 1],
+                        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                        borderColor: window.chartColors.yellow,
+                        label: 'Tasks Completed',
+                        data: [4, 7, 8, 7, 10],
                     }
                 ]
             }
