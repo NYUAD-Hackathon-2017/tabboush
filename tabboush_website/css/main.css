@@ -4,8 +4,21 @@
    Author's custom styles
    ========================================================================== */
 
+.jumbotron {
+    background-image: url("../img/jumbo-cat-img.jpg");
+    background-size: cover;
+    border-bottom: 2px solid #e4e4e4;
+}
 
+.top-title {
+    padding: 40px;
+    background-color: rgba(0,0,0,.2);
+}
 
+.top-title h1,
+.top-title p {
+    color: #FFF;
+}
 
 
 
