@@ -9,6 +9,15 @@
     background-size: cover;
 }
 
+.top-title {
+    padding: 40px;
+    background-color: rgba(0,0,0,.2);
+}
+
+.top-title h1,
+.top-title p {
+    color: #FFF;
+}
 
 
 
