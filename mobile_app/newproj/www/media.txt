@@ -1,0 +1,26 @@
+.controller("SoundController", function($scope, $ionicLoading, $cordovaMedia) {
+
+
+    $scope.play = function(src) {
+        var media = new Media(src, null, null, null);
+        media.play();
+    }
+
+
+
+
+})
+
+
+    $scope.media = null;
+
+    $scope.play = function(index) {
+
+      if($scope.media){
+        $scope.media.stop();
+        $scope.media.release();
+      }
+      var src= "/android_asset/www/audio/activity2/"+index+"_ac.mp3";
+      $scope.media = new Media(src, null, null, null);
+      $scope.media.play();
+    }
